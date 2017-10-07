@@ -21,4 +21,7 @@ Route::get('xml',function (){
 
 Route::get('lerxml', 'xmlController@savexml');
 
-//Route::get('addxml','xmlController@addxml');
+Route::get('admin', function () {
+    return view('sb-admin-2');
+});
+
