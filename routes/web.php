@@ -19,6 +19,6 @@ Route::get('xml',function (){
     return view('leitorxml');
 });
 
-Route::get('lerxml', 'xmlController@index');
+Route::get('lerxml', 'xmlController@savexml');
 
-Route::get('addxml','xmlController@addxml');
+//Route::get('addxml','xmlController@addxml');
