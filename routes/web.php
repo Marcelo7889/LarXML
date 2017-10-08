@@ -26,3 +26,6 @@ Route::get('admin', function () {
 });
 
 Route::get('inicio', 'xmlController@getXml');
+
+Route::get('carros','carroController@getCarros');
+Route::post('carros','carroController@addCarro');
