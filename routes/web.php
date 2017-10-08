@@ -25,3 +25,4 @@ Route::get('admin', function () {
     return view('sb-admin-2');
 });
 
+Route::get('inicio', 'xmlController@getXml');

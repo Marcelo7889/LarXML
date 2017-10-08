@@ -40,4 +40,9 @@ class xmlController extends Controller
         $xml->save();
        // return view('leitorxml',['nome' => $xml->nomeRemetente]);
     }
+
+    public function getXml(){
+     $xmls = xmlModel::all();
+     return view('main', ['xmls' => $xmls]);
+    }
 }
